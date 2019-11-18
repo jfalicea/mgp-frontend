@@ -18,28 +18,28 @@ class TableBody extends React.Component{
 
     render(){  
         let msg
+        let headings
+        let tableData
         if(!this.state.tableInfo){
             return  msg = "Loading..."
         }
-        // headings = this.state.headings.map((heading, i)=>{
-        //     return <TableHeader key={i} heading={heading} />
-        // })
-        // if(!this.state.tableData){
-        //     return tableData = "Loading Table Data...."
-        // }
-        // tableData = this.state.tableData.map((row,i)=>{
-        //     return <TableRow key={i} row={row} />
-        // })
+        headings = this.state.tableInfo.headings.map((heading, i)=>{
+            return <TableHeader key={i} heading={heading} />
+        })
+        tableData = this.state.tableInfo.tableData.map((row,i)=>{
+            return <TableRow key={i} row={row} />
+        })
+        console.log(this.state.tableInfo.tableData)
         return(<>
             {msg}
             <table className="highlight ">
                 <thead>
                     <tr>
-                        {/* {headings} */}
+                        {headings}
                     </tr>
                 </thead>
                 <tbody>
-                    {/* {tableData} */}
+                    {tableData}
                 </tbody>
             </table>
         </>)

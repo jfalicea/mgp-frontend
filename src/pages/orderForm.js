@@ -7,13 +7,11 @@ class orderForm extends React.Component{
     super(props);
     this.state = {
       headings: ["Date","Description","Price", "Qty"], 
-      tableData:[
-        {mealName: "chicken", date: "12/25/2019",price: "10.99",Qty: "3"},
-        {mealName: "chicken", date: "12/25/2019",price: "10.99",Qty: "3"},
-        {mealName: "chicken", date: "12/25/2019",price: "10.99",Qty: "3"}
-    ]
+      tableData:[{mealName: "chicken", date: "12/25/2019",price: "10.99",Qty: "3"}]
     };
   }
+
+  
 
   render(){
     return(<>

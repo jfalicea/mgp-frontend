@@ -11,7 +11,7 @@ class MealCounter extends React.Component{
 
   render(){
     return(<>
-        <h1>meal counter!</h1>
+        <h4>meal counter!</h4>
     </>)
   }
 }
