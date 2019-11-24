@@ -1,0 +1,37 @@
+nav{
+    display: flex;
+    background-color: lightblue;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    box-shadow: 0 4px 2px -1px gray;
+    color: white;
+}
+
+.logo{
+    /* temporary delete when done */
+    display: flex;
+    padding-left: 5%;
+    width: 50%;
+    align-items: center;
+}
+.logo>h2{
+    
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-links{
+    /* temporary delete when done */
+    width: 50%
+}
+.nav-links>ul{
+    display: flex; 
+    justify-content: flex-end;
+    padding-right: 2%;
+
+}
+.nav-links>ul>li{
+    margin-left: 10px;
+    align-items: center;
+    list-style: none;
+}

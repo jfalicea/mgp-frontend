@@ -8,10 +8,28 @@ class MealCounter extends React.Component{
       
     };
   }
-
+  componentWillMount () {
+    this.setState({
+      mealDetails: this.props.mealDetails
+    })
+  }
   render(){
+    let msg 
+    if(!this.state.mealDetails){
+      msg = 'Loading.... '
+    }
+    console.log(this.props.mealDetails)
     return(<>
-        <h4>meal counter!</h4>
+      {msg}
+      <div className="container"> 
+        <div className="row">
+          <h4>meal counter!</h4>
+         <div className="container"> 
+          <h4>{this.state.mealDetails.numOfPlates}</h4>
+         </div>
+        </div>
+
+      </div>
     </>)
   }
 }

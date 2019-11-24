@@ -4,7 +4,7 @@ import home from './pages/home'
 import orderForm from './pages/orderForm';
 import accountHistory from './pages/accountHistory';
 import faq from './pages/faq';
-import aboutUs from './pages/aboutUs';
+import aboutUs from './pages/about';
 import pastMeals from './pages/pastMeals';
 
 

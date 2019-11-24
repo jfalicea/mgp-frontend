@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarShell from '../Components/Navbar/NavbarShell'
+import Navbar from '../Components/Navbar/Navbar'
 import Footer from '../Components/Footer/Footer'
 class pastMeals extends React.Component{
   constructor(props){
@@ -12,7 +12,7 @@ class pastMeals extends React.Component{
   render(){
     return(<>
         <header>
-            <NavbarShell />
+            <Navbar />
         </header>
         <main>
             <p>

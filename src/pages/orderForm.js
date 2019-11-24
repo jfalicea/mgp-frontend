@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarShell from '../Components/Navbar/NavbarShell';
+import Navbar from '../Components/Navbar/Navbar';
 import TableBody from '../Components/Table/TableBody';
 
 class orderForm extends React.Component{
@@ -15,7 +15,7 @@ class orderForm extends React.Component{
 
   render(){
     return(<>
-        <NavbarShell />
+        <Navbar />
         <h1> this is the order form</h1>
         <TableBody headings={this.state.headings} tableData={this.state.tableData}/>
     </>)

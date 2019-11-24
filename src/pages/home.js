@@ -1,4 +1,4 @@
-import NavbarShell from '../Components/Navbar/NavbarShell'
+import Navbar from '../Components/Navbar/Navbar'
 import Title from '../Components/Titles/Title'
 import React from 'react';
 import MealOfDayCard from '../Components/Cards/MealOfDayCard';
@@ -18,7 +18,8 @@ class home extends React.Component{
         mealName: 'Pasta', 
         mealDetails:{
           ingreds:"lots of food stuff", 
-          price: "$10.99"
+          price: "$10.99",
+          numOfPlates : "25"
         }
       }
     };
@@ -27,21 +28,27 @@ class home extends React.Component{
   render(){
     return(<>
     <header>
-      <NavbarShell />
+      <Navbar />
     </header>
     <main>
-        <div className="container">
+        {/* <div className="container"> */}
           <Title mealName={this.state.mealInfo.mealName} />
           <div className='row'> 
-              <div className="col s12">
-                  <MealOfDayCard mealDetails={{...this.state.mealInfo.mealDetails}} />
+            <div className="col s12 m8" >
+                <MealOfDayCard mealDetails={{...this.state.mealInfo.mealDetails}} />
+            </div>
+            <div className="counter col s12 m4">
+              <div className="row">
+                <div className="col s6 m12"> 
+                  <OrderNowBtn />  
+                </div>
+                <div className="col s6 m12"> 
+                  <MealCounter mealDetails={{...this.state.mealInfo.mealDetails}} />
+                </div>
               </div>
+            </div>
           </div>  
-          <div className="counter">
-            <MealCounter />
-            <OrderNowBtn />  
-          </div>
-        </div>
+        {/* </div> */}
         <ul>
         <li><Link to="/account-history">Account History</Link></li>
         <li><Link to="/faq">FAQ</Link></li>

@@ -11,7 +11,6 @@ function TableRow(props){
         <td>{props.row.mealName}</td>
         <td>{props.row.price}</td>
         <td>{props.row.Qty}</td>
-
     </tr>    
   </>)
 }

@@ -1,4 +1,8 @@
 import React from 'react';
+import Button from '@material-ui/core/Button'
+
+
+
 class OrderNowBtn extends React.Component{
   constructor(props){
     super(props);
@@ -9,9 +13,11 @@ class OrderNowBtn extends React.Component{
 
   render(){
     return(<>
-        <div className="orderNowBtn">
-            <p>Order Now</p>
-        </div>
+        <button className="button">
+          <h4>
+            Order Now
+          </h4>
+        </button>
     </>)
   }
 }
