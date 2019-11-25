@@ -1,15 +1,20 @@
 import React from 'react';
+import './MealCard.css'
+
+
+
 function MealOfDayCard(props){
-  return(
-<div className="card">
-    <div className="card-image waves-effect waves-block waves-light">
-        <img className="activator" src="sample-1.jpg" />
+  return(<>
+    <div className="card">
+       <div className='pic-container'>
+         <img src="sample-1.jpg" alt="" />
+       </div>
+       <div className="card-text"> 
+        <span>{props.mealInfo.mealName}</span>
+        <p>{props.mealInfo.mealDetails.ingreds}</p>
+        <p>{props.mealInfo.mealDetails.price}</p>
+       </div>
     </div>
-    <div className="card-content">
-    <span className="card-title activator grey-text text-darken-4">Card Title</span>
-    <p>{props.mealDetails.ingreds}  {props.mealDetails.price}</p>
-    </div>
-</div>
-  )
+  </>)
 }
 export default MealOfDayCard;

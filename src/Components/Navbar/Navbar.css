@@ -5,6 +5,7 @@ nav{
     width: 100%;
     box-shadow: 0 4px 2px -1px gray;
     color: white;
+    height: 10vh;
 }
 
 .logo{
