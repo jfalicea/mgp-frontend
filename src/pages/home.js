@@ -7,7 +7,7 @@ import OrderNowBtn from '../Components/Buttons/OrderNowBtn';
 import MealCounter from '../Components/Counter/MealCounter';
 import Footer from '../Components/Footer/Footer';
 import './index.css'
-import * as orderSevice from './services/order.service';
+// import * as orderSevice from './services/order.service';
 
 
 class home extends React.Component{
@@ -25,12 +25,7 @@ class home extends React.Component{
       }
     };
   }
-  foo(x){
-    const foobar = orderService.coool(x);
-    this.setState({
-      foobar
-    })
-  }
+  
   render(){
     return(<>
     <header>
